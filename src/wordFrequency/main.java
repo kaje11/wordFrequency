@@ -20,9 +20,9 @@ public class main {
 				new WordFrequencyFactory();
 		
 		try {
-			WordFrequency wordFrequency = wordFrequencyFactory.openFile( "example.txt" );
+			WordFrequency wordFrequency = wordFrequencyFactory.openFile( "examples/example.txt" );
 			System.out.println( "Generating an example of cloud map." );
-			wordFrequency.generateWordCloud("cloud.html", 400);
+			wordFrequency.generateWordCloud("examples/cloud.html", 400);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
